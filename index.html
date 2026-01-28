@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconic Cat - Meme Token</title>
+    <meta name="description" content="Iconic Cat brings the ultimate cat meme to the Ethereum blockchain - Zero tax, fully community-owned meme token.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo-container">
+                    <img src="logo.png" alt="Iconic Cat Logo" class="logo-img">
+                    <span>Iconic Cat</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tokenomics">Tokenomics</a></li>
+                    <li><a href="#howtobuy">How to Buy</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#buy" class="nav-cta">Buy Now</a></li>
+                </ul>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Hero section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo-container">
+                    <img src="logo.png" alt="Iconic Cat Logo" class="hero-logo">
+                </div>
+                <h1>The <span class="gradient-text">Iconic Cat</span> Meme Token</h1>
+                <p>Iconic Cat brings the ultimate cat meme to the Ethereum blockchain. Zero tax, fully community-owned, and built for the culture.</p>
+                <div class="hero-btns">
+                    <a href="#buy" class="btn btn-primary">Buy on DEX</a>
+                    <a href="#community" class="btn btn-secondary">Join Community</a>
+                </div>
+                
+                <div class="price-ticker">
+                    <div class="price-info">
+                        <span class="price-label">Live Price:</span>
+                        <span class="price-value" id="current-price">$0.0000001</span>
+                    </div>
+                    <div class="price-change">
+                        <i class="fas fa-arrow-up" id="price-icon"></i>
+                        <span id="price-change">+2.5%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof" aria-label="Social links">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://t.me/iconiccat" target="_blank" class="social-icon" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://twitter.com/iconiccat" target="_blank" class="social-icon" aria-label="Twitter/X">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter/X</span>
+                </a>
+                <a href="https://dexscreener.com/ethereum/contract_address" target="_blank" class="social-icon" aria-label="DexScreener">
+                    <i class="fas fa-chart-line"></i>
+                    <span>DexScreener</span>
+                </a>
+                <a href="https://www.coingecko.com/" target="_blank" class="social-icon" aria-label="CoinGecko">
+                    <i class="fas fa-coins"></i>
+                    <span>CoinGecko</span>
+                </a>
+                <a href="https://discord.gg/iconiccat" target="_blank" class="social-icon" aria-label="Discord">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-label="About Iconic Cat">
+        <div class="container">
+            <h2 class="section-title">About Iconic Cat</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>More Than Just a Meme</h3>
+                    <p>Iconic Cat was born from the most iconic cat memes to ever take over the internet. We believe in the power of community, culture, and decentralized finance.</p>
+                    <p>Our mission is simple: create the most fun and engaging meme token ecosystem while building a strong, supportive community of cat lovers and crypto enthusiasts.</p>
+                    <p>With zero transaction tax, locked liquidity, and a fully transparent contract, Iconic Cat is designed for sustainability and long-term growth.</p>
+                    <a href="#tokenomics" class="btn btn-accent" style="margin-top: 20px;">See Tokenomics</a>
+                </div>
+                <div class="about-visual">
+                    <img src="logo.png" alt="Iconic Cat Meme" class="meme-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics -->
+    <section id="tokenomics" class="section-bg" aria-label="Tokenomics">
+        <div class="container">
+            <h2 class="section-title">Tokenomics</h2>
+            
+            <div class="tokenomics-grid">
+                <div class="tokenomics-card">
+                    <i class="fas fa-coins"></i>
+                    <h3>Total Supply</h3>
+                    <p class="token-value">1,000,000,000</p>
+                    <p class="token-label">ICAT Tokens</p>
+                </div>
+                
+                <div class="tokenomics-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Liquidity</h3>
+                    <p class="token-value">100% Locked</p>
+                    <p class="token-label">Forever</p>
+                </div>
+                
+                <div class="tokenomics-card">
+                    <i class="fas fa-percentage"></i>
+                    <h3>Tax</h3>
+                    <p class="token-value">0% Buy & Sell</p>
+                    <p class="token-label">No Hidden Fees</p>
+                </div>
+                
+                <div class="tokenomics-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>NFT Collection</h3>
+                    <p class="token-value">Coming Soon</p>
+                    <p class="token-label">Exclusive for Holders</p>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <h3 style="text-align: center;">Distribution Breakdown</h3>
+                <div class="chart-wrapper">
+                    <div class="pie-chart">
+                        <div class="pie-chart-center">Total<br>100%</div>
+                    </div>
+                    
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: var(--primary);"></div>
+                            <div class="legend-text">
+                                <strong>Liquidity & Trading Pool</strong>
+                                <div>90% of total supply</div>
+                            </div>
+                            <div class="legend-percentage">90%</div>
+                        </div>
+                        
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: var(--secondary);"></div>
+                            <div class="legend-text">
+                                <strong>CEX Listings & Market Making</strong>
+                                <div>5% listing fees & Initial liquidity</div>
+                            </div>
+                            <div class="legend-percentage">5%</div>
+                        </div>
+                        
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: var(--accent);"></div>
+                            <div class="legend-text">
+                                <strong>NFT & Rewards</strong>
+                                <div>3% surprise coming soon...</div>
+                            </div>
+                            <div class="legend-percentage">3%</div>
+                        </div>
+                        
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: var(--purple);"></div>
+                            <div class="legend-text">
+                                <strong>Team & Development</strong>
+                                <div>2% Website & infra</div>
+                            </div>
+                            <div class="legend-percentage">2%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy -->
+    <section id="howtobuy" aria-label="How to buy Iconic Cat">
+        <div class="container">
+            <h2 class="section-title">How to Buy Iconic Cat</h2>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <i class="fas fa-wallet step-icon"></i>
+                    <h3>Get a Wallet</h3>
+                    <p>Download and set up MetaMask or Trust Wallet on your device.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <i class="fas fa-ethereum step-icon"></i>
+                    <h3>Add ETH</h3>
+                    <p>Add the Ethereum network and ensure you have enough ETH for gas fees.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <i class="fas fa-exchange-alt step-icon"></i>
+                    <h3>Swap Token</h3>
+                    <p>Go to Uniswap, connect your wallet, and swap ETH for Iconic Cat.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <i class="fas fa-rocket step-icon"></i>
+                    <h3>Hold & Meme</h3>
+                    <p>Hold your tokens and join our community for memes, updates and surprises!</p>
+                </div>
+            </div>
+            
+            <div class="cta-container" style="text-align: center; margin-top: 30px;">
+                <a href="#buy" class="btn btn-primary">Buy on Uniswap</a>
+            </div>
+            
+            <div class="wallets">
+                <div class="wallet-icon">
+                    <i class="fab fa-ethereum"></i>
+                    <span>Ethereum</span>
+                </div>
+                <div class="wallet-icon">
+                    <i class="fas fa-wallet"></i>
+                    <span>MetaMask</span>
+                </div>
+                <div class="wallet-icon">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Trust Wallet</span>
+                </div>
+                <div class="wallet-icon">
+                    <i class="fas fa-university"></i>
+                    <span>Uniswap</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section id="roadmap" class="section-bg" aria-label="Roadmap">
+        <div class="container">
+            <h2 class="section-title">Roadmap</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase 1: Launch & Memes</h3>
+                        <ul class="timeline-list">
+                            <li class="completed">✓ Token Launch on Uniswap</li>
+                            <li class="completed">✓ Website & Social Media Setup</li>
+                            <li class="in-progress">▶️ Community Building</li>
+                            <li class="in-progress">▶️ First 1,000 Holders</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase 2: Community Growth</h3>
+                        <ul class="timeline-list">
+                            <li class="planned">○ CoinGecko & CMC Listings</li>
+                            <li class="planned">○ Marketing Campaigns</li>
+                            <li class="planned">○ NFT Collection Launch</li>
+                            <li class="planned">○ 10,000+ Holders</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase 3: Ecosystem</h3>
+                        <ul class="timeline-list">
+                            <li class="planned">○ Merchandise Store</li>
+                            <li class="planned">○ NFT Platform</li>
+                            <li class="planned">○ Animal Welfare & Charity</li>
+                            <li class="planned">○ Cross-Chain Expansion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community -->
+    <section id="community" aria-label="Community">
+        <div class="container">
+            <h2 class="section-title">Join the Clowder</h2>
+            
+            <div class="community-content">
+                <p class="community-description">Our community is the heart of Iconic Cat. Join thousands of cat lovers, meme enthusiasts, and crypto degens in our social channels.</p>
+                
+                <div class="community-btns">
+                    <a href="https://t.me/iconiccat" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                    <a href="https://twitter.com/iconiccat" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-twitter"></i> Twitter/X
+                    </a>
+                    <a href="https://discord.gg/iconiccat" target="_blank" class="btn btn-accent">
+                        <i class="fab fa-discord"></i> Discord
+                    </a>
+                </div>
+                
+                <h3 class="community-subtitle">Community Meme Wall</h3>
+                
+                <div class="meme-carousel">
+                    <div class="meme-item">
+                        <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cat Meme 1" class="meme-img-small">
+                    </div>
+                    <div class="meme-item">
+                        <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cat Meme 2" class="meme-img-small">
+                    </div>
+                    <div class="meme-item">
+                        <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cat Meme 3" class="meme-img-small">
+                    </div>
+                    <div class="meme-item">
+                        <img src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cat Meme 4" class="meme-img-small">
+                    </div>
+                    <div class="meme-item">
+                        <img src="https://images.unsplash.com/photo-1561948955-570b270e7c36?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cat Meme 5" class="meme-img-small">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Section -->
+    <section id="buy" class="buy-section" aria-label="Buy Iconic Cat">
+        <div class="container">
+            <h2 class="section-title">Buy Iconic Cat Now</h2>
+            <p class="buy-description">Join the revolution and become part of the most iconic cat meme community in crypto. Get your Iconic Cat tokens today!</p>
+            
+            <div class="buy-btns">
+                <a href="https://app.uniswap.org/" target="_blank" class="btn btn-white">Buy on Uniswap</a>
+                <a href="https://dexscreener.com/" target="_blank" class="btn btn-outline">View Chart</a>
+            </div>
+            
+            <div class="contract-section">
+                <p class="contract-label"><strong>Contract Address:</strong></p>
+                <div class="contract-address">
+                    <span id="contract">0x0000000000000000000000000000000000000000</span>
+                    <button class="copy-btn" id="copy-btn" aria-label="Copy contract address">
+                        <i class="far fa-copy"></i> Copy
+                    </button>
+                </div>
+                <p class="contract-note">Always verify the contract address before trading.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Iconic Cat Logo" class="footer-logo-img">
+                        <span>Iconic Cat</span>
+                    </div>
+                    <p class="footer-description">The iconic cat meme token that's taking over the blockchain. Join the revolution today!</p>
+                    <div class="footer-social">
+                        <a href="https://t.me/iconiccat" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://twitter.com/iconiccat" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://discord.gg/iconiccat" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="https://dexscreener.com/" target="_blank" aria-label="DexScreener"><i class="fas fa-chart-line"></i></a>
+                        <a href="https://www.coingecko.com/" target="_blank" aria-label="CoinGecko"><i class="fas fa-coins"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="#tokenomics">Tokenomics</a>
+                        <a href="#howtobuy">How to Buy</a>
+                        <a href="#roadmap">Roadmap</a>
+                        <a href="#community">Community</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <div class="footer-links">
+                        <a href="https://app.uniswap.org/" target="_blank">Uniswap</a>
+                        <a href="https://etherscan.io/" target="_blank">Etherscan</a>
+                        <a href="https://dexscreener.com/" target="_blank">DexScreener</a>
+                        <a href="https://coinmarketcap.com/" target="_blank">CoinMarketCap</a>
+                        <a href="https://www.coingecko.com/" target="_blank">CoinGecko</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p class="contact-email">admin@iconiccat.org</p>
+                    <a href="#buy" class="btn footer-buy-btn">Buy Now</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Iconic Cat. All rights reserved. This is a meme token with no financial advice.</p>
+                <p class="disclaimer">Cryptocurrency investments are highly volatile. Only invest what you can afford to lose.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
